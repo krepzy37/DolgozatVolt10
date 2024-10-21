@@ -1,0 +1,43 @@
+﻿<Window x:Class="MuveltsegiVerseny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MuveltsegiVerseny"
+        mc:Ignorable="d"
+        Title="Műveltségi verseny" Height="900" Width="500">
+    <Grid>
+        <ListBox x:Name="kerdesLB" HorizontalAlignment="Left" Height="110" Margin="24,32,0,0" VerticalAlignment="Top" Width="449">
+
+        </ListBox>
+        <Label Content="Kérdések" HorizontalAlignment="Left" Margin="24,6,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Kérdőjeles feladatok száma" HorizontalAlignment="Left" Margin="24,147,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="f2BTN" Content="Számolás" HorizontalAlignment="Left" Margin="187,178,0,0" VerticalAlignment="Top" Width="123" Click="f2BTN_Click"/>
+        <TextBlock x:Name="f2TBlock" HorizontalAlignment="Left" Margin="24,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="3 pontos kémia feladatok száma" HorizontalAlignment="Left" Margin="17,222,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="f3BTN" Content="Számolás" HorizontalAlignment="Left" Margin="187,248,0,0" VerticalAlignment="Top" Width="123" Click="f3BTN_Click"/>
+        <TextBlock x:Name="f3TBlock" HorizontalAlignment="Left" Margin="24,274,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="Válaszok számértékeinek tartománya" HorizontalAlignment="Left" Margin="17,295,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="f4BTN" Content="Számolás" HorizontalAlignment="Left" Margin="187,321,0,0" VerticalAlignment="Top" Width="123" Click="f4BTN_Click"/>
+        <TextBlock x:Name="f4TBlock" HorizontalAlignment="Left" Margin="24,342,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="Témakörök listája" HorizontalAlignment="Left" Margin="10,363,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="f5BTN" Content="Listázás" HorizontalAlignment="Left" Margin="187,388,0,0" VerticalAlignment="Top" Width="123" Click="f5BTN_Click"/>
+        <ListBox x:Name="f5LB" HorizontalAlignment="Left" Height="56" Margin="24,413,0,0" VerticalAlignment="Top" Width="449">
+
+        </ListBox>
+        <Label Content="Keresés kérdésekben" HorizontalAlignment="Left" Margin="17,474,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="f6IN" HorizontalAlignment="Center" Margin="0,511,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="207"/>
+        <Button x:Name="f6BTN" Content="Keresés" HorizontalAlignment="Left" Margin="187,534,0,0" VerticalAlignment="Top" Width="123" Click="f6BTN_Click"/>
+        <ListBox x:Name="f6LB" HorizontalAlignment="Left" Height="64" Margin="24,559,0,0" VerticalAlignment="Top" Width="449">
+
+        </ListBox>
+        <TextBlock x:Name="f6KivalaszottQ" HorizontalAlignment="Left" Margin="24,628,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button x:Name="f6BTN_2" Content="Válasz" HorizontalAlignment="Left" Margin="187,691,0,0" VerticalAlignment="Top" Width="123" Click="f6BBTN_Click"/>
+        <TextBox x:Name="f6Answer" HorizontalAlignment="Left" Margin="145,668,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="207"/>
+        <TextBlock x:Name="elertPont" HorizontalAlignment="Left" Margin="10,711,0,0" TextWrapping="Wrap" Text="A válasz" VerticalAlignment="Top"/>
+        <Label Content="Véletlenszerű feladatsor generálása" HorizontalAlignment="Left" Margin="10,732,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="f7BTN" Content="Generálás" HorizontalAlignment="Left" Margin="187,763,0,0" VerticalAlignment="Top" Width="123" Click="f7BTN_Click"/>
+
+
+    </Grid>
+</Window>
