@@ -99,12 +99,15 @@ namespace MuveltsegiVerseny
                 }
             }
             if (f6LB.Items.Count.Equals(0)) MessageBox.Show("Nem található ilyen kérdés a listában!");
+            else
+            {
+                Random rnd = new();
+                int f6index = rnd.Next(0, f6LB.Items.Count);
 
-            Random rnd = new();
-            int f6index = rnd.Next(0, f6LB.Items.Count);
 
-
-            f6KivalaszottQ.Text = f6LB.Items[f6index].ToString();
+                f6KivalaszottQ.Text = f6LB.Items[f6index].ToString();
+            }
+            
 
         }
 
